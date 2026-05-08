@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@700&family=Lato:wght@400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+    background: #121212;
+    color: #fefefe;
+    font-family: Lato, system-ui, sans-serif;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+  }
+}
