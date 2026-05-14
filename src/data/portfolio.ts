@@ -78,6 +78,36 @@ export const projectFilters = ["All", "Frontend", "Full-Stack", "Backend/API", "
 
 export const projects = [
   {
+    name: "Cities",
+    category: "Frontend",
+    image: "/assets/projects/cities.png",
+    github: "https://github.com/cittiescompany/cities-web-app",
+    web: "https://cittis.cc/",
+    stack: ["React", "Tailwind CSS", "shadcn/ui", "Lucide React", "TanStack Query"],
+    description:
+      "A feature-rich social network and lifestyle platform where users can post, repost, like, comment, follow others, join communities, pay for utilities, buy airtime and data, shop in a marketplace, and message sellers. I worked mainly on the frontend, building responsive product flows with React, Tailwind CSS, shadcn/ui, Lucide React, and TanStack Query.",
+  },
+  {
+    name: "Discuss",
+    category: "Full-Stack",
+    image: "/assets/projects/discuss.jpeg",
+    github: "https://github.com/Oluwadunsin2016/Discuss",
+    web: "https://discuss-six-psi.vercel.app/",
+    stack: ["React", "Tailwind CSS", "Node.js", "Socket.IO"],
+    description:
+      "A modern real-time chat application built for smooth private and group conversations. I worked on the complete experience, from responsive chat screens to backend socket events that keep messages fast and reliable.",
+  },
+  {
+    name: "Postgram",
+    category: "Full-Stack",
+    image: "/assets/projects/postgram.png",
+    github: "https://github.com/Oluwadunsin2016/Postgram",
+    web: "https://postgram-pi.vercel.app/",
+    stack: ["React", "TanStack Query", "Node.js"],
+    description:
+      "A social media platform experience where users can create posts, like, comment, and follow other users. My work focused on building responsive screens and smooth data-driven interactions with TanStack Query.",
+  },
+  {
     name: "Movieflix",
     category: "Full-Stack",
     image: "/assets/projects/movieflix.png",
@@ -88,14 +118,14 @@ export const projects = [
       "A sleek Netflix-inspired movie streaming platform with a polished browsing experience, full-stack architecture, and modern media discovery flows. I worked across both the frontend and backend, connecting the interface, server logic, and database-backed features.",
   },
   {
-    name: "Let's Discuss",
-    category: "Full-Stack",
-    image: "/assets/projects/lets-discuss.png",
-    github: "https://github.com/Oluwadunsin2016/chat_application",
-    web: "https://chat-application-seven-coral.vercel.app/",
-    stack: ["React", "Tailwind CSS", "Node.js", "Socket.IO"],
+    name: "Cities-App landing page",
+    category: "Landing Page",
+    image: "/assets/projects/cities-app-landing.png",
+    github: "https://github.com/cittiescompany/cities-app",
+    web: "https://cities-home.vercel.app/",
+    stack: ["React", "Tailwind CSS", "shadcn/ui", "Lucide React"],
     description:
-      "A modern real-time chat application built for smooth private and group conversations. I worked on the complete experience, from responsive chat screens to backend socket events that keep messages fast and reliable.",
+      "A bold, investor-ready landing page for Cities App, designed to introduce the product vision with a strong hero section, crisp messaging, and polished responsive UI. I worked mainly on the frontend, building the landing experience with React, Tailwind CSS, shadcn/ui, and Lucide React icons.",
   },
   {
     name: "Car Marketplace",
@@ -106,16 +136,6 @@ export const projects = [
     stack: ["React", "Node.js", "API Integration"],
     description:
       "A car buying and selling platform that helps users browse listings, inspect vehicle details, and connect around available cars. I handled both the frontend and backend responsibilities for the product flow.",
-  },
-  {
-    name: "Postgram",
-    category: "Frontend",
-    image: "/assets/projects/postgram.png",
-    github: "https://github.com/Oluwadunsin2016/Postgram",
-    web: "https://postgram-pi.vercel.app/",
-    stack: ["React", "TanStack Query", "Node.js"],
-    description:
-      "A social media platform experience where users can create posts, like, comment, and follow other users. My work focused on the frontend, building responsive screens and smooth data-driven interactions with TanStack Query.",
   },
   {
     name: "Portfolio Builder",
