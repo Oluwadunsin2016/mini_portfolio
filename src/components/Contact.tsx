@@ -73,7 +73,7 @@ function Contact() {
   };
 
   return (
-    <section className="scroll-mt-24" id="contact">
+    <section className="scroll-mt-24 motion-safe:animate-fade-up" id="contact">
       <SectionHeading title="Contact me" copy="Cultivating connections: reach out and connect with me." />
 
       <form className="mx-auto grid max-w-[1012px] gap-6 md:grid-cols-2" onSubmit={handleSubmit} noValidate>
@@ -102,7 +102,7 @@ function Contact() {
         <FieldError error={errors.details}>
           <textarea className="min-h-[162px] w-full resize-y rounded-lg border border-transparent bg-white/[0.04] px-6 py-3 text-muted outline-none focus:border-brand" aria-label="Project details" placeholder="Project Details..." value={form.details} onChange={(event) => updateField("details", event.target.value)} />
         </FieldError>
-        <button className="inline-flex min-h-12 items-center justify-center gap-2 justify-self-end rounded-lg border-2 border-muted px-10 py-3 font-bold text-muted transition hover:-translate-y-0.5 md:col-span-2" type="submit">
+        <button className="inline-flex min-h-12 items-center justify-center gap-2 justify-self-end rounded-lg border-2 border-muted px-10 py-3 font-bold text-muted transition duration-300 hover:-translate-y-1 hover:border-brand hover:text-brand md:col-span-2" type="submit">
           <Send size={18} />
           Send
         </button>

@@ -21,15 +21,15 @@ function Testimonials() {
   };
 
   return (
-    <section className="scroll-mt-24" id="testimonials">
+    <section className="w-full max-w-full min-w-0 scroll-mt-24 overflow-hidden" id="testimonials">
       <SectionHeading
         title="Testimonials"
         copy="What clients say about the experience of working with me."
       />
 
-      <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 sm:gap-5">
+      <div className="grid w-full max-w-full min-w-0 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 overflow-hidden sm:gap-5">
         <button
-          className="grid h-10 w-10 place-items-center rounded-full border border-brand/50 bg-brand/10 text-brand sm:h-12 sm:w-12"
+          className="grid h-10 w-10 place-items-center rounded-full border border-brand/50 bg-brand/10 text-brand transition duration-300 hover:-translate-x-1 hover:bg-brand hover:text-white sm:h-12 sm:w-12"
           onClick={() => scrollTestimonials("left")}
           type="button"
           aria-label="Scroll testimonials left"
@@ -37,9 +37,9 @@ function Testimonials() {
           <ChevronLeft size={28} />
         </button>
 
-        <div className="grid auto-cols-[minmax(620px,760px)] grid-flow-col gap-6 overflow-x-auto scroll-smooth pb-4 [scrollbar-color:#fd6f00_rgba(255,255,255,0.08)] max-md:auto-cols-[minmax(280px,86vw)]" ref={trackRef}>
+        <div className="grid min-w-0 max-w-full auto-cols-[minmax(620px,760px)] grid-flow-col gap-6 overflow-x-auto scroll-smooth pb-4 [scrollbar-color:#fd6f00_rgba(255,255,255,0.08)] max-md:auto-cols-[minmax(260px,82vw)]" ref={trackRef}>
           {testimonials.map((testimonial) => (
-            <article className="grid min-h-[260px] grid-rows-[auto_1fr_auto] gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-6 md:p-8" key={`${testimonial.name}-${testimonial.role}`}>
+            <article className="grid min-h-[260px] grid-rows-[auto_1fr_auto] gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-2 hover:border-brand/50 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-black/20 motion-safe:animate-fade-up md:p-8" key={`${testimonial.name}-${testimonial.role}`}>
               <header className="grid grid-cols-[auto_1fr] items-center gap-4">
                 <img className="h-16 w-16 rounded-full border-2 border-brand/70 object-cover" src={testimonial.avatar} alt={testimonial.name} />
                 <div className="grid min-w-0 gap-1">
@@ -66,7 +66,7 @@ function Testimonials() {
         </div>
 
         <button
-          className="grid h-10 w-10 place-items-center rounded-full border border-brand/50 bg-brand/10 text-brand sm:h-12 sm:w-12"
+          className="grid h-10 w-10 place-items-center rounded-full border border-brand/50 bg-brand/10 text-brand transition duration-300 hover:translate-x-1 hover:bg-brand hover:text-white sm:h-12 sm:w-12"
           onClick={() => scrollTestimonials("right")}
           type="button"
           aria-label="Scroll testimonials right"

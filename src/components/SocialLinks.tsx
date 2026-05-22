@@ -8,13 +8,13 @@ type SocialLinksProps = {
 function SocialLinks({ label = "Social links" }: SocialLinksProps) {
   return (
     <div className="flex items-center gap-5" aria-label={label}>
-      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition hover:border-brand/70 hover:text-brand" href={contact.twitter} target="_blank" rel="noreferrer" aria-label="Twitter">
+      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition duration-300 hover:-translate-y-1 hover:border-brand/70 hover:text-brand" href={contact.twitter} target="_blank" rel="noreferrer" aria-label="Twitter">
         <TwitterIcon />
       </a>
-      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition hover:border-brand/70 hover:text-brand" href={contact.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition duration-300 hover:-translate-y-1 hover:border-brand/70 hover:text-brand" href={contact.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
         <Linkedin size={20} />
       </a>
-      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition hover:border-brand/70 hover:text-brand" href={contact.telegram} target="_blank" rel="noreferrer" aria-label="Telegram">
+      <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-muted transition duration-300 hover:-translate-y-1 hover:border-brand/70 hover:text-brand" href={contact.telegram} target="_blank" rel="noreferrer" aria-label="Telegram">
         <Send size={19} />
       </a>
     </div>

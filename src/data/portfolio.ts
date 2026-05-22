@@ -93,9 +93,9 @@ export const projects = [
     image: "/assets/projects/discuss.jpeg",
     github: "https://github.com/Oluwadunsin2016/Discuss",
     web: "https://discuss-six-psi.vercel.app/",
-    stack: ["React", "Tailwind CSS", "Node.js", "Socket.IO"],
+    stack: ["React", "Node.js", "Socket.IO", "MongoDB", "TanStack Query"],
     description:
-      "A modern real-time chat application built for smooth private and group conversations. I worked on the complete experience, from responsive chat screens to backend socket events that keep messages fast and reliable.",
+      "Built a real-time chat app with React.js, Node.js, Socket.IO, MongoDB, and TanStack Query. It supports private and group chats, media sharing, replies, reactions, message pinning, forwarding, typing indicators, presence, unread counts, and password reset flows.",
   },
   {
     name: "Postgram",
@@ -103,9 +103,9 @@ export const projects = [
     image: "/assets/projects/postgram.png",
     github: "https://github.com/Oluwadunsin2016/Postgram",
     web: "https://postgram-pi.vercel.app/",
-    stack: ["React", "TanStack Query", "Node.js"],
+    stack: ["React", "Node.js", "MongoDB", "Socket.IO", "Cloudinary", "TanStack Query"],
     description:
-      "A social media platform experience where users can create posts, like, comment, and follow other users. My work focused on building responsive screens and smooth data-driven interactions with TanStack Query.",
+      "Built a full-stack Instagram-style social media platform with React.js, Node.js, MongoDB, Socket.IO, Cloudinary, and TanStack Query. It features secure authentication, email password reset, text, image, and video posts, reposts, likes, nested comments and replies, saved and tagged posts, follow system, real-time direct messaging, story/status updates, notifications, profile customization, media uploads, and a responsive social feed.",
   },
   {
     name: "Movieflix",

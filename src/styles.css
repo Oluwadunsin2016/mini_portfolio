@@ -7,10 +7,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     min-width: 320px;
+    overflow-x: hidden;
     background: #121212;
     color: #fefefe;
     font-family: Lato, system-ui, sans-serif;
