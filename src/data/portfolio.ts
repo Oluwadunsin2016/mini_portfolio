@@ -105,7 +105,7 @@ export const projects = [
     web: "https://postgram-pi.vercel.app/",
     stack: ["React", "Node.js", "MongoDB", "Socket.IO", "Cloudinary", "TanStack Query"],
     description:
-      "Built a full-stack Instagram-style social media platform with React.js, Node.js, MongoDB, Socket.IO, Cloudinary, and TanStack Query. It features secure authentication, email password reset, text, image, and video posts, reposts, likes, nested comments and replies, saved and tagged posts, follow system, real-time direct messaging, story/status updates, notifications, profile customization, media uploads, and a responsive social feed.",
+      "Built a full-stack Instagram-style social media platform with React.js, Node.js, MongoDB, Socket.IO, Cloudinary, and TanStack Query. Features auth, media posts, reposts, nested comments, follows, real-time messaging, stories, notifications, profiles, and a responsive social feed",
   },
   {
     name: "Movieflix",
