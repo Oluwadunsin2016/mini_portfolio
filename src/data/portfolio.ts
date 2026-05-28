@@ -108,6 +108,16 @@ export const projects = [
       "Built a full-stack Instagram-style social media platform with React.js, Node.js, MongoDB, Socket.IO, Cloudinary, and TanStack Query. Features auth, media posts, reposts, nested comments, follows, real-time messaging, stories, notifications, profiles, and a responsive social feed",
   },
   {
+    name: "Triumphant Cars",
+    category: "Full-Stack",
+    image: "/assets/projects/triumphant-cars.png",
+    github: "https://github.com/Oluwadunsin2016/car_marketplace_frontend",
+    web: "https://car-marketplace-frontend.vercel.app/",
+    stack: ["React", "Node.js", "API Integration"],
+    description:
+      "A car buying and selling platform that helps users browse listings, inspect vehicle details, and connect around available cars. I handled both the frontend and backend responsibilities for the product flow.",
+  },
+  {
     name: "Movieflix",
     category: "Full-Stack",
     image: "/assets/projects/movieflix.png",
@@ -126,16 +136,6 @@ export const projects = [
     stack: ["React", "Tailwind CSS", "shadcn/ui", "Lucide React"],
     description:
       "A bold, investor-ready landing page for Cities App, designed to introduce the product vision with a strong hero section, crisp messaging, and polished responsive UI. I worked mainly on the frontend, building the landing experience with React, Tailwind CSS, shadcn/ui, and Lucide React icons.",
-  },
-  {
-    name: "Car Marketplace",
-    category: "Full-Stack",
-    image: "/assets/projects/car-marketplace.png",
-    github: "https://github.com/Oluwadunsin2016/car_marketplace_frontend",
-    web: "https://car-marketplace-frontend.vercel.app/",
-    stack: ["React", "Node.js", "API Integration"],
-    description:
-      "A car buying and selling platform that helps users browse listings, inspect vehicle details, and connect around available cars. I handled both the frontend and backend responsibilities for the product flow.",
   },
   {
     name: "Portfolio Builder",
