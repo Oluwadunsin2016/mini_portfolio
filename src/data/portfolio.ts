@@ -118,15 +118,15 @@ export const projects = [
       "A car buying and selling platform that helps users browse listings, inspect vehicle details, and connect around available cars. I handled both the frontend and backend responsibilities for the product flow.",
   },
   {
-    name: "Movieflix",
-    category: "Full-Stack",
-    image: "/assets/projects/movieflix.png",
-    github: "https://github.com/Oluwadunsin2016/movieflix",
-    web: "https://movieflix-alpha-ashen.vercel.app/",
-    stack: ["React", "Node.js", "Express", "MongoDB", "Vite"],
-    description:
-      "A sleek Netflix-inspired movie streaming platform with a polished browsing experience, full-stack architecture, and modern media discovery flows. I worked across both the frontend and backend, connecting the interface, server logic, and database-backed features.",
-  },
+  name: "Movieflix",
+  category: "Full-Stack",
+  image: "/assets/projects/movieflix.png",
+  github: "https://github.com/Oluwadunsin2016/movieflix",
+  web: "https://movieflix-alpha-ashen.vercel.app/",
+  stack: ["React 19", "Vite", "Node.js", "Express", "MongoDB", "Tailwind CSS", "HeroUI"],
+  description:
+    "A premium YouTube-powered movie streaming and discovery platform. Converts long-form videos into structured collections using a custom admin curation tool to approve and reorder shelves. Features rate-limited JWT authentication, custom password recovery flows, Cloudinary-backed profile uploads, and personalized library shelves (Watch Later, Loved, and Continue Watching)."
+},
   {
     name: "Cities-App landing page",
     category: "Landing Page",
