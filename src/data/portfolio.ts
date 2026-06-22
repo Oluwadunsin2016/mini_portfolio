@@ -127,6 +127,26 @@ export const projects = [
   description:
     "A premium YouTube-powered movie streaming and discovery platform. Converts long-form videos into structured collections using a custom admin curation tool to approve and reorder shelves. Features rate-limited JWT authentication, custom password recovery flows, Cloudinary-backed profile uploads, and personalized library shelves (Watch Later, Loved, and Continue Watching)."
 },
+{
+  name: "Alexiscom",
+  category: "Full-Stack",
+  image: "/assets/projects/alexiscom.png",
+  github: "https://github.com/Oluwadunsin2016/Alexiscom_client",
+  web: "https://alexiscom-client.vercel.app/",
+  stack: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Redux",
+    "Node.js",
+    "MongoDB",
+    "Paystack",
+    "Nodemailer"
+  ],
+  description:
+    "Engineered a premium full-stack e-commerce storefront and merchant control center. Features secure JWT credentials, dynamic autocomplete search overlays, stock inventory alert badges, and persistent database wishlists. Built an active user reviews rating and helpful-voting system, dynamic percentage/flat promo coupon managers, secure Paystack payment checkouts, and custom transaction receipt email templates, supported by responsive SVG analytics visualizations in the merchant panel.",
+},
   {
     name: "Cities-App landing page",
     category: "Landing Page",
