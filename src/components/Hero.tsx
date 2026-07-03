@@ -9,7 +9,7 @@ function Hero() {
       <div className="grid justify-items-center gap-6 text-center motion-safe:animate-fade-up lg:justify-items-start lg:text-left">
         <p className="m-0 text-2xl font-bold text-dim">Hi I am</p>
         <h2 className="-mt-3 text-2xl font-bold text-muted md:text-[28px]">Stephen Oluwagbemiga</h2>
-        <h1 className="m-0 max-w-[9ch] bg-gradient-to-r from-[#984300] via-brand to-[#ca5900] bg-clip-text text-6xl font-black leading-none text-transparent md:text-[6.4rem]">
+        <h1 className="m-0 max-w-[9ch] bg-gradient-to-r from-[#984300] via-brand to-[#ca5900] bg-clip-text text-4xl sm:text-5xl md:text-7xl lg:text-[6.4rem] font-black leading-none text-transparent">
           Full-Stack Developer
         </h1>
 

@@ -45,12 +45,12 @@ function About() {
       <div className="mt-24 w-full max-w-full min-w-0 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex w-max max-w-none gap-8 motion-safe:animate-marquee hover:[animation-play-state:paused]">
           {[...skills, ...skills].map((skill, index) => (
-            <div className="group grid min-w-[160px] justify-items-center gap-3 text-center" key={`${skill.name}-${index}`}>
-              <div className="grid h-[130px] w-[130px] place-items-center rounded-full border-2 border-brand bg-white/[0.04] shadow-[inset_0_0_0_10px_rgba(253,111,0,0.08)] transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-brand/20">
-                <img className="h-16 w-16 object-contain" src={skill.logo} alt={`${skill.name} logo`} />
+            <div className="group grid min-w-[110px] md:min-w-[160px] justify-items-center gap-3 text-center" key={`${skill.name}-${index}`}>
+              <div className="grid h-[90px] w-[90px] md:h-[130px] md:w-[130px] place-items-center rounded-full border-2 border-brand bg-white/[0.04] shadow-[inset_0_0_0_6px_rgba(253,111,0,0.08)] md:shadow-[inset_0_0_0_10px_rgba(253,111,0,0.08)] transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-brand/20">
+                <img className="h-10 w-10 md:h-16 md:w-16 object-contain" src={skill.logo} alt={`${skill.name} logo`} />
               </div>
-              <strong className="text-base text-[#dfdfdf]">{skill.name}</strong>
-              <span className="text-sm font-black text-brand">{skill.level}</span>
+              <strong className="text-sm md:text-base text-[#dfdfdf]">{skill.name}</strong>
+              <span className="text-xs md:text-sm font-black text-brand">{skill.level}</span>
             </div>
           ))}
         </div>

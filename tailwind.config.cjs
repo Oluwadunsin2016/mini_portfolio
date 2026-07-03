@@ -40,6 +40,10 @@ module.exports = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
       },
       animation: {
         "fade-up": "fade-up 700ms ease both",
@@ -49,6 +53,7 @@ module.exports = {
         "modal-in": "modal-in 220ms ease both",
         "soft-pulse": "soft-pulse 3.5s ease-in-out infinite",
         marquee: "marquee 28s linear infinite",
+        shimmer: "shimmer 1.6s infinite linear",
       },
     },
   },

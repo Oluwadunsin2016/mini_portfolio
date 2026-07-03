@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { projectFilters, projects } from "../data/portfolio";
 import { ExternalLink, Github, Maximize2, X } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import ImageWithLoader from "./ImageWithLoader";
 
 type Project = (typeof projects)[number];
 
@@ -53,18 +54,28 @@ function Projects() {
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {visibleProjects.map((project) => (
           <button
-            className="group overflow-hidden rounded-[28px] border border-white/10 bg-[#171717] text-left text-inherit transition duration-300 hover:-translate-y-2 hover:border-brand/60 hover:shadow-2xl hover:shadow-black/30 motion-safe:animate-fade-up"
+            className="group flex flex-col w-full overflow-hidden rounded-[28px] border border-white/10 bg-[#171717] text-left text-inherit transition duration-300 hover:-translate-y-2 hover:border-brand/60 hover:shadow-2xl hover:shadow-black/30 motion-safe:animate-fade-up"
             key={project.name}
             onClick={() => openProject(project)}
             type="button"
           >
-            <span className="relative block aspect-[1.22] overflow-hidden bg-[#0d0d0d] after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:to-base/80">
-              <img className="h-full w-full object-cover transition duration-500 group-hover:scale-110" src={project.image} alt={`${project.name} preview`} />
+            <span className="relative block aspect-[1.22] w-full overflow-hidden bg-[#0d0d0d] after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:to-base/80">
+              <ImageWithLoader className="h-full w-full" imgClassName="h-full w-full object-cover group-hover:scale-110" src={project.image} alt={`${project.name} preview`} />
             </span>
-            <span className="grid gap-3 p-5">
+            <span className="grid gap-3 p-5 w-full">
               <span className="w-fit rounded-full border border-brand/40 bg-brand/10 px-3 py-1.5 text-xs font-black text-brand">{project.category}</span>
-              <strong className="text-2xl text-white">{project.name}</strong>
-              <span className="line-clamp-3 text-base leading-relaxed text-muted">{project.description}</span>
+              <strong className="text-xl md:text-2xl text-white">{project.name}</strong>
+              <p
+                className="text-sm md:text-base leading-relaxed !text-gray-300 block w-full"
+                style={{
+                  display: "-webkit-box",
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                }}
+              >
+                {project.description}
+              </p>
               <span className="flex flex-wrap gap-2">
                 {project.stack.slice(0, 3).map((tool) => (
                   <em className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-extrabold not-italic text-[#c6c6c6]" key={tool}>
@@ -153,8 +164,8 @@ function ProjectModal({ project, initialScrollY, onClose }: ProjectModalProps) {
           <X size={20} />
         </button>
 
-        <a className="relative min-h-[280px] overflow-hidden rounded-2xl bg-[#0d0d0d] lg:min-h-[420px]" href={project.image} target="_blank" rel="noreferrer">
-          <img className="h-full w-full object-cover transition duration-500 hover:scale-105" src={project.image} alt={`${project.name} full preview`} />
+        <a className="relative block min-h-[280px] overflow-hidden rounded-2xl bg-[#0d0d0d] lg:min-h-[420px]" href={project.image} target="_blank" rel="noreferrer">
+          <ImageWithLoader className="h-full w-full" imgClassName="h-full w-full object-cover hover:scale-105" src={project.image} alt={`${project.name} full preview`} />
           <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-base/85 px-4 py-2 text-sm font-black text-white">
             <Maximize2 size={16} />
             Open image fullscreen
@@ -163,8 +174,8 @@ function ProjectModal({ project, initialScrollY, onClose }: ProjectModalProps) {
 
         <div className="grid content-center gap-5 px-1 py-4">
           <span className="w-fit rounded-full border border-brand/40 bg-brand/10 px-3 py-1.5 text-xs font-black text-brand">{project.category}</span>
-          <h3 className="m-0 text-4xl font-bold leading-none text-white md:text-5xl">{project.name}</h3>
-          <p className="m-0 text-lg leading-relaxed text-muted">{project.description}</p>
+          <h3 className="m-0 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-none text-white">{project.name}</h3>
+          <p className="m-0 text-base md:text-lg leading-relaxed text-gray-300">{project.description}</p>
 
           <div className="flex flex-wrap gap-2">
             {project.stack.map((tool) => (

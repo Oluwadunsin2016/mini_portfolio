@@ -85,7 +85,7 @@ export const projects = [
     web: "https://cittis.cc/",
     stack: ["React", "Tailwind CSS", "shadcn/ui", "Lucide React", "TanStack Query"],
     description:
-      "A feature-rich social network and lifestyle platform where users can post, repost, like, comment, follow others, join communities, pay for utilities, buy airtime and data, shop in a marketplace, and message sellers. I worked mainly on the frontend, building responsive product flows with React, Tailwind CSS, shadcn/ui, Lucide React, and TanStack Query.",
+      "A feature-rich social network and lifestyle platform supporting real-time interactions, utility payments, and a local marketplace. Engineered the responsive frontend using React, Tailwind CSS, and TanStack Query.",
   },
   {
     name: "Discuss",
@@ -95,7 +95,7 @@ export const projects = [
     web: "https://discuss-six-psi.vercel.app/",
     stack: ["React", "Node.js", "Socket.IO", "MongoDB", "TanStack Query"],
     description:
-      "Built a real-time chat app with React.js, Node.js, Socket.IO, MongoDB, and TanStack Query. It supports private and group chats, media sharing, replies, reactions, message pinning, forwarding, typing indicators, presence, unread counts, and password reset flows.",
+      "A real-time chat application featuring private/group messaging, media sharing, and instant reactions. Built with React, Node.js, Socket.IO, and MongoDB.",
   },
   {
     name: "Postgram",
@@ -105,7 +105,7 @@ export const projects = [
     web: "https://postgram-pi.vercel.app/",
     stack: ["React", "Node.js", "MongoDB", "Socket.IO", "Cloudinary", "TanStack Query"],
     description:
-      "Built a full-stack Instagram-style social media platform with React.js, Node.js, MongoDB, Socket.IO, Cloudinary, and TanStack Query. Features auth, media posts, reposts, nested comments, follows, real-time messaging, stories, notifications, profiles, and a responsive social feed",
+      "An Instagram-style social media platform with media sharing, nested comments, real-time messaging, and profile customization. Built using React, Node.js, Socket.IO, and MongoDB.",
   },
   {
     name: "Triumphant Cars",
@@ -115,7 +115,7 @@ export const projects = [
     web: "https://car-marketplace-frontend.vercel.app/",
     stack: ["React", "Node.js", "API Integration"],
     description:
-      "A car buying and selling platform that helps users browse listings, inspect vehicle details, and connect around available cars. I handled both the frontend and backend responsibilities for the product flow.",
+      "A peer-to-peer car marketplace allowing users to browse listings, view detailed vehicle specs, and contact sellers. Handled full-stack development and API integrations.",
   },
   {
   name: "Movieflix",
@@ -125,7 +125,7 @@ export const projects = [
   web: "https://movieflix-alpha-ashen.vercel.app/",
   stack: ["React 19", "Vite", "Node.js", "Express", "MongoDB", "Tailwind CSS", "HeroUI"],
   description:
-    "A premium YouTube-powered movie streaming and discovery platform. Converts long-form videos into structured collections using a custom admin curation tool to approve and reorder shelves. Features rate-limited JWT authentication, custom password recovery flows, Cloudinary-backed profile uploads, and personalized library shelves (Watch Later, Loved, and Continue Watching)."
+    "A premium video streaming platform with custom content curation, secure rate-limited JWT authentication, and personalized user libraries. Built with React 19, Node.js, and MongoDB."
 },
 {
   name: "Alexiscom",
@@ -145,7 +145,7 @@ export const projects = [
     "Nodemailer"
   ],
   description:
-    "Engineered a premium full-stack e-commerce storefront and merchant control center. Features secure JWT credentials, dynamic autocomplete search overlays, stock inventory alert badges, and persistent database wishlists. Built an active user reviews rating and helpful-voting system, dynamic percentage/flat promo coupon managers, secure Paystack payment checkouts, and custom transaction receipt email templates, supported by responsive SVG analytics visualizations in the merchant panel.",
+    "A comprehensive e-commerce platform and merchant dashboard featuring JWT authentication, active inventory alerts, secure Paystack checkout, promo code management, and sales analytics visualizations.",
 },
   {
     name: "Cities-App landing page",
@@ -155,7 +155,7 @@ export const projects = [
     web: "https://cities-home.vercel.app/",
     stack: ["React", "Tailwind CSS", "shadcn/ui", "Lucide React"],
     description:
-      "A bold, investor-ready landing page for Cities App, designed to introduce the product vision with a strong hero section, crisp messaging, and polished responsive UI. I worked mainly on the frontend, building the landing experience with React, Tailwind CSS, shadcn/ui, and Lucide React icons.",
+      "An investor-ready product landing page featuring clean typography, structured value propositions, and interactive elements. Built with React and Tailwind CSS.",
   },
   {
     name: "Portfolio Builder",
@@ -165,7 +165,7 @@ export const projects = [
     web: "https://portfolio-upload-plum.vercel.app/l",
     stack: ["Vue.js", "Tailwind CSS", "Laravel", "PHP"],
     description:
-      "A portfolio builder for developers seeking jobs, built with Vue.js, Tailwind CSS, and Laravel. It supports portfolio creation and real-time editing so users can quickly shape and update their professional profile.",
+      "A dynamic resume and portfolio builder for developers. Supports real-time editing, template selection, and PDF export. Built with Vue.js, Tailwind CSS, and Laravel.",
   },
   // {
   //   name: "PayBridge API",

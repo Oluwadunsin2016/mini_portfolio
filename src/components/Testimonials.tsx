@@ -13,9 +13,16 @@ function Testimonials() {
       return;
     }
 
-    const cardWidth = track.querySelector(".testimonial-card")?.clientWidth ?? 320;
+    const card = track.querySelector(".testimonial-card");
+    if (!card) {
+      return;
+    }
+
+    const cardWidth = card.clientWidth;
+    const scrollAmount = cardWidth + 24;
+
     track.scrollBy({
-      left: direction === "left" ? -(cardWidth + 24) : cardWidth + 24,
+      left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
     });
   };
@@ -37,9 +44,9 @@ function Testimonials() {
           <ChevronLeft size={28} />
         </button>
 
-        <div className="grid min-w-0 max-w-full auto-cols-[minmax(620px,760px)] grid-flow-col gap-6 overflow-x-auto scroll-smooth pb-4 [scrollbar-color:#fd6f00_rgba(255,255,255,0.08)] max-md:auto-cols-[minmax(260px,82vw)]" ref={trackRef}>
+        <div className="grid min-w-0 max-w-full auto-cols-[minmax(620px,760px)] grid-flow-col gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [scrollbar-color:#fd6f00_rgba(255,255,255,0.08)] max-md:auto-cols-[minmax(260px,82vw)]" ref={trackRef}>
           {testimonials.map((testimonial) => (
-            <article className="grid min-h-[260px] grid-rows-[auto_1fr_auto] gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-2 hover:border-brand/50 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-black/20 motion-safe:animate-fade-up md:p-8" key={`${testimonial.name}-${testimonial.role}`}>
+            <article className="testimonial-card grid min-h-[260px] grid-rows-[auto_1fr_auto] gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-2 hover:border-brand/50 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-black/20 motion-safe:animate-fade-up md:p-8 snap-center md:snap-start" key={`${testimonial.name}-${testimonial.role}`}>
               <header className="grid grid-cols-[auto_1fr] items-center gap-4">
                 <img className="h-16 w-16 rounded-full border-2 border-brand/70 object-cover" src={testimonial.avatar} alt={testimonial.name} />
                 <div className="grid min-w-0 gap-1">
