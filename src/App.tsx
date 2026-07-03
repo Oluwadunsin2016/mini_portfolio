@@ -24,7 +24,7 @@ function App() {
         <RevealOnScroll>
           <About />
         </RevealOnScroll>
-        <RevealOnScroll>
+        <RevealOnScroll threshold={0.01}>
           <Projects />
         </RevealOnScroll>
         <RevealOnScroll>

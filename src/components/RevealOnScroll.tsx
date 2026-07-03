@@ -2,9 +2,15 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 
 type RevealOnScrollProps = {
   children: ReactNode;
+  threshold?: number;
+  rootMargin?: string;
 };
 
-function RevealOnScroll({ children }: RevealOnScrollProps) {
+function RevealOnScroll({
+  children,
+  threshold = 0.02,
+  rootMargin = "0px 0px -50px 0px",
+}: RevealOnScrollProps) {
   const elementRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,15 +29,15 @@ function RevealOnScroll({ children }: RevealOnScrollProps) {
         }
       },
       {
-        rootMargin: "0px 0px -12% 0px",
-        threshold: 0.12,
+        rootMargin,
+        threshold,
       },
     );
 
     observer.observe(element);
 
     return () => observer.disconnect();
-  }, []);
+  }, [threshold, rootMargin]);
 
   return (
     <div
